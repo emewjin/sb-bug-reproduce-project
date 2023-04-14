@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.node.json",
+  "include": ["tsup.config.ts", "../../shared/tsup.option.ts"]
+}
+

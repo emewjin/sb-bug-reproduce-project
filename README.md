@@ -2,17 +2,14 @@
 
 1. run `pnpm i` : install dependencies
 2. run `pnpm storybook` : run storybook
-3. go to http://localhost:6007/?path=/docs/changelog--docs, then you can see error:
+3. go to http://localhost:6007/?path=/story/v5-buttons-button--basic, then you can see error:
    ```
-   Error: Failed to execute 'createElement' on 'Document': The tag name provided ('/CHANGELOG.md') is not a valid name.
-    at createElement (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:7233:42)
-    at createInstance (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:8093:28)
-    at completeWork (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:14762:34)
-    at completeUnitOfWork (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:16907:24)
-    at performUnitOfWork (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:16889:13)
-    at workLoopSync (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:16835:13)
-    at renderRootSync (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:16810:15)
-    at performSyncWorkOnRoot (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:16550:26)
-    at scheduleUpdateOnFiber (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:16315:15)
-    at updateContainer (http://localhost:6007/node_modules/.cache/.vite-storybook/deps/chunk-CFDS43L5.js?v=315bd9cb:18754:11)
+   TypeError: importers[path] is not a function
+    at StoryStore.importFn (http://localhost:6007/virtual:/@storybook/builder-vite/storybook-stories.js:6:31)
+    at StoryStore.loadCSFFileByStoryId (http://localhost:6007/sb-preview/runtime.mjs:40:8376)
+    at StoryStore.loadStory (http://localhost:6007/sb-preview/runtime.mjs:40:9563)
+    at async http://localhost:6007/sb-preview/runtime.mjs:74:9003
+    at async StoryRender.runPhase (http://localhost:6007/sb-preview/runtime.mjs:74:8764)
+    at async StoryRender.prepare (http://localhost:6007/sb-preview/runtime.mjs:74:8922)
+    at async PreviewWeb.renderSelection (http://localhost:6007/sb-preview/runtime.mjs:94:3120)
    ```

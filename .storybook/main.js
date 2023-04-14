@@ -1,7 +1,7 @@
 const react = require('@vitejs/plugin-react');
 module.exports = {
   stories: [
-    './Changelog/*.stories.mdx',
+    '../packages/*/src/*.stories.(tsx|mdx)',
   ],
   addons: [
     '@storybook/addon-actions',

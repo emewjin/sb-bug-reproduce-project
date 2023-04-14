@@ -1,0 +1,38 @@
+{
+  "name": "button",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "build:fast": "tsup src/index.ts"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.9.3",
+    "@mantine/core": "~5.8",
+    "@mantine/hooks": "~5.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "^11.9.3",
+    "@mantine/core": "~5.8",
+    "@mantine/hooks": "~5.8",
+    "@types/react": "17.0.33",
+    "@types/react-dom": "17.0.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.8.4"
+  }
+}

@@ -1,9 +1,10 @@
 {
-  "name": "test",
-  "version": "0.0.1",
+  "name": "sb-bug-reproduce-project",
   "scripts": {
-    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider storybook build",
-    "storybook": "storybook dev -p 6007"
+    "test": "jest",
+    "build": "turbo run build",
+    "build:fast": "turbo run build:fast",
+    "storybook": "turbo build:fast && storybook dev -p 6007"
   },
   "resolutions": {
     "react": "^17.0.2",
@@ -11,9 +12,13 @@
     "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
     "typescript": "4.8.4",
-    "@emotion/react": "11.9.3"
+    "@emotion/react": "11.9.3",
+    "@mantine/core": "~5.8",
+    "@mantine/hooks": "~5.8"
   },
   "dependencies": {
+    "@mantine/core": "~5.8",
+    "@mantine/utils": "~5.8",
     "@types/react": "17.0.33",
     "react": "^17.0.2"
   },
@@ -47,11 +52,11 @@
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "storybook": "^7.0.4",
+    "tsup": "^6.2.3",
+    "turbo": "^1.6.3",
     "typescript": "^4.8.4",
     "vite": "^4.2.1"
   }

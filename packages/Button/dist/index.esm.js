@@ -1,0 +1,1 @@
+import{Button as r,createPolymorphicComponent as n}from"@mantine/core";import{forwardRef as e}from"react";import{jsx as m}from"@emotion/react/jsx-runtime";var t=e((o,B)=>m(r,{...o}));t.displayName="Button";var p=n(t),u=p;export{u as Button};
