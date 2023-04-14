@@ -1,0 +1,58 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "scripts": {
+    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider storybook build",
+    "storybook": "storybook dev -p 6007"
+  },
+  "resolutions": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@types/react": "17.0.33",
+    "@types/react-dom": "17.0.10",
+    "typescript": "4.8.4",
+    "@emotion/react": "11.9.3"
+  },
+  "dependencies": {
+    "@types/react": "17.0.33",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "^11.9.3",
+    "@storybook/addon-actions": "^7.0.4",
+    "@storybook/addon-backgrounds": "^7.0.4",
+    "@storybook/addon-controls": "^7.0.4",
+    "@storybook/addon-docs": "^7.0.4",
+    "@storybook/addon-interactions": "^7.0.4",
+    "@storybook/addon-links": "^7.0.4",
+    "@storybook/addon-mdx-gfm": "^7.0.4",
+    "@storybook/addon-measure": "^7.0.4",
+    "@storybook/addon-outline": "^7.0.4",
+    "@storybook/addon-toolbars": "^7.0.4",
+    "@storybook/addon-viewport": "^7.0.4",
+    "@storybook/mdx2-csf": "^1.0.0",
+    "@storybook/react": "^7.0.4",
+    "@storybook/react-vite": "^7.0.4",
+    "@storybook/testing-library": "^0.1.0",
+    "@storybook/theming": "^7.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "storybook": "^7.0.4",
+    "typescript": "^4.8.4",
+    "vite": "^4.2.1"
+  }
+}
